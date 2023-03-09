@@ -9,31 +9,43 @@ function Portfolio() {
     return <>
         {/* <Sidebar /> */}
         <div className="sidebar">
+        <a href="#home">
             <div className='sbDiv' >
                 <FontAwesomeIcon icon={faHouse} className="homeIcon" />
-                <p className="sbText"><a href="#home">Home</a></p>
+                <p className="sbText">Home</p>
             </div>
+            </a>
+            <a href="#about">
             <div className='sbDiv'>
                 <FontAwesomeIcon icon={faUser} className="homeIcon" />
-                <p className="sbText"><a href="#about">About Me</a></p>
+                <p className="sbText">About Me</p>
             </div>
+            </a>
+            <a href="#work">
             <div className='sbDiv'>
                 <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
-                <p className="sbText"><a href="#work">Work Experience</a></p>
+                <p className="sbText">Work Experience</p>
             </div>
+            </a>
+            <a href="#project">
             <div className='sbDiv'>
                 <FontAwesomeIcon icon={faEye} className="homeIcon"  />
-                <p className="sbText"><a href="#project">Projects</a></p>
+                <p className="sbText">Projects</p>
             </div>
+            </a>
+            <a href="#publication">
             <div className='sbDiv'>
             <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
                 {/* <FontAwesomeIcon icon={faMemo} className="homeIcon"  /> */}
-                <p className="sbText"><a href="#publication">Publications</a></p>
+                <p className="sbText">Publications</p>
             </div>
+            </a>
+            <a href="#achievement">
             <div className='sbDiv'>
                 <FontAwesomeIcon icon={faTrophy} className="homeIcon" />
-                <p className="sbText"><a href="#achievement">Achievements</a></p>
+                <p className="sbText">Achievements</p>
             </div>
+            </a>
         </div>
         <div className="portfolio">
             <div className="homeSection" id="home">

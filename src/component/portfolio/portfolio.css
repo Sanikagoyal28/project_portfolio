@@ -221,3 +221,7 @@ a:hover{
     border-radius: 4px;
     color: #252525;
 }
+
+.sidebar > a {
+    text-decoration: none;
+}
