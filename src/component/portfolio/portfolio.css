@@ -1,0 +1,223 @@
+.portfolio {
+    margin-left: 12vw;
+    padding-left: 2vw;
+    background-color: #121212;
+    padding-bottom:40px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+    scrollbar-width: none;
+}
+
+/* home section */
+.homeSection {
+    margin-left: 24vw;
+    padding-top: 100px;
+    width: 32vw;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.homeHead {
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 45px;
+    letter-spacing: 0.08em;
+}
+
+.homeImage {}
+
+.homeText {
+    color: rgb(255, 255, 255, 0.9);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 36px;
+    margin-left: 3.8vw;
+    letter-spacing: 0.08em;
+}
+
+.homeLinks {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    margin-left: 2.5vw;
+}
+
+.homeLinks li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 0.5vw;
+}
+a {
+    color: #fff; 
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.aboutText {
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #252525;
+}
+
+.homeBtn {
+    width: 8.5vw;
+    height: 38px;
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: 10vw;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.homeBtn:hover {
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #252525;
+}
+
+/* horizontal rule */
+.divider {
+    margin-left: -2vw;
+    width: 102%;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+}
+
+/* about */
+.aboutSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.aboutHead {
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 45px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.aboutText {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.95rem;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: rgb(255, 255, 255, 0.8);
+    width: 70vw;
+    margin-left: 6.5vw;
+}
+
+/* work section */
+.workSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* card */
+.card {
+    display: flex;
+    width: 70vw;
+    margin-left: 4vw;
+}
+
+.cardImage {
+    height: 240px;
+    width: 600px;
+    border-radius: 10%;
+
+}
+
+.cardRightdiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    padding-top:24px;
+    width: 50vw;
+}
+
+.cardHead {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: rgb(255, 255, 255, 0.8);
+    width: 48vw;
+    margin-bottom: 16px;
+}
+
+.cardText {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.9rem;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: rgb(255, 255, 255, 0.5);
+    width: 48vw;
+    margin-bottom: 16px;
+}
+
+.cardBtn {
+    width: 8vw;
+    height: 38px;
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cardBtn:hover {
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #252525;
+}
