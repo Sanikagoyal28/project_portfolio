@@ -1,4 +1,3 @@
-import Sidebar from "../sidebar/sidebar"
 import profile from "../Assets/profile.webp"
 import Card from "./card"
 import "./portfolio.css"
@@ -7,7 +6,6 @@ import { faHouse, faUser, faEye, faMemo, faTrophy, faBriefcase } from "@fortawes
 
 function Portfolio() {
     return <>
-        {/* <Sidebar /> */}
         <div className="sidebar">
         <a href="#home">
             <div className='sbDiv' >
