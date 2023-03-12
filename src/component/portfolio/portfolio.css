@@ -238,6 +238,48 @@ a:hover {
 
 /* sidebar */
 
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+label #btn {
+    position: absolute;
+    /* left: 86vw; */
+    right: 40px;
+    top: 12px;
+    font-size: 1.7rem;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -30vw;
+    top: 12px;
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.9;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+}
+
+#check:checked~label #btn {
+    opacity: 0;
+}
+
+#check:checked~label #cancel {
+    left: 32vw;
+}
+
 .sidebar {
     background-color: #222;
     background-blend-mode: lighten;
@@ -245,7 +287,7 @@ a:hover {
     width: 12vw;
     height: 100%;
     position: fixed;
-    left: 0;
+    left: 0vw;
     top: 0;
     padding-top: 32px;
 }
@@ -385,9 +427,10 @@ a:hover {
         font-size: 1.52rem;
         margin-left: -4vw;
     }
-    .cardImage{
-        width:450px;
-        height:210px;
+
+    .cardImage {
+        width: 450px;
+        height: 210px;
     }
 }
 
@@ -828,7 +871,19 @@ a:hover {
 
 @media(max-width:520px) {
     .sidebar {
-        display: none;
+        /* left: -220px; */
+        width: 42vw;
+        left:0;
+    }
+
+    label #btn,
+    label #cancel {
+        display: block;
+    }
+
+    #check:checked~.sidebar {
+        /* left: 220px; */
+        left:-220px;
     }
 
     .portfolio {
@@ -897,8 +952,9 @@ a:hover {
     .cardHead {
         font-size: 1rem;
     }
-    .card{
-       margin-left:17vw; 
+
+    .card {
+        margin-left: 17vw;
     }
 }
 
@@ -914,18 +970,28 @@ a:hover {
     .homeLinks {
         width: 65vw;
     }
-    .homeBtn{
-        width:18vw;
+
+    .homeBtn {
+        width: 18vw;
     }
 }
 
-
 @media(max-width:470px) {
-  .homeText {
+    .homeText {
         width: 64vw;
     }
+
     .homeLinks {
         width: 68vw;
+    }
+    .sidebar{
+        width:45vw;
+    }
+    #check:checked~label #cancel {
+        left: 35vw;
+    }
+    label #btn {
+        right:30px;
     }
 }
 
@@ -941,8 +1007,9 @@ a:hover {
     .homeLinks {
         width: 72vw;
     }
-    .homeBtn{
-        width:20vw;
+
+    .homeBtn {
+        width: 20vw;
     }
 }
 
@@ -958,8 +1025,12 @@ a:hover {
     .homeLinks {
         width: 78vw;
     }
-    .cardImage{
-        height:200px;
+
+    .cardImage {
+        height: 200px;
+    }
+    label #btn {
+        right:20px;
     }
 }
 
@@ -968,11 +1039,11 @@ a:hover {
         width: 88vw;
     }
 
-    .homeImage{
-        width:340px;
-        height:240px;
+    .homeImage {
+        width: 340px;
+        height: 240px;
     }
-    
+
     .homeText {
         width: 76vw;
     }
@@ -980,13 +1051,16 @@ a:hover {
     .homeLinks {
         width: 84vw;
     }
-    .homeBtn{
-        width:22vw;
+
+    .homeBtn {
+        width: 22vw;
     }
-    .card{
+
+    .card {
         margin-left: 15vw;
     }
-     .cardImage {
+
+    .cardImage {
         width: 68vw;
         height: 210px;
         margin-bottom: 12px;
@@ -997,8 +1071,9 @@ a:hover {
         width: 68vw;
         margin-bottom: 8px;
     }
-    .cardBtn{
-        width:16vw;
+
+    .cardBtn {
+        width: 16vw;
     }
 }
 
@@ -1014,64 +1089,94 @@ a:hover {
     .homeLinks {
         width: 84vw;
     }
-    .cardImage{
-        height:200px;
+
+    .cardImage {
+        height: 200px;
     }
+
     .homeImage {
         width: 320px;
         height: 220px;
     }
-}
-@media(max-width:365px){
-    .homeHead{
-        width:94vw;
+    .sidebar{
+        width:48vw;
     }
-    .homeLinks {
-        width: 86vw;
+    #check:checked~label #cancel {
+        left: 34vw;
     }
-    .cardBtn{
-        width:18vw;
-    }
-    .homeBtn{
-        width:24vw;
+    label #btn {
+        right:10px;
     }
 }
 
-@media(max-width:280px){
-    .homeHead{
-width:90vw;
-font-size:1.1rem;
+@media(max-width:365px) {
+    .homeHead {
+        width: 94vw;
     }
-    .homeImage{
+
+    .homeLinks {
+        width: 86vw;
+    }
+
+    .cardBtn {
+        width: 18vw;
+    }
+
+    .homeBtn {
+        width: 24vw;
+    }
+    .sidebar{
+        width:52vw;
+    }
+    #check:checked~label #cancel {
+        left: 38vw;
+    }
+}
+
+@media(max-width:280px) {
+    .homeHead {
+        width: 90vw;
+        font-size: 1.1rem;
+    }
+
+    .homeImage {
         width: 240px;
         height: 190px;
     }
-    .homeLinks{
-margin-left:12vw;
+
+    .homeLinks {
+        margin-left: 12vw;
     }
-    .homeText{
-        width:88vw;
+
+    .homeText {
+        width: 88vw;
         font-size: 0.98rem;
     }
-    .homeLinks > li{
+
+    .homeLinks>li {
         font-size: 0.9rem;
         line-height: 26px;
     }
-    .homeBtn{
-        width:30vw;
+
+    .homeBtn {
+        width: 30vw;
     }
-    .card{
+
+    .card {
         margin-left: 12vw;
     }
-    .cardImage{
-        width:72vw;
-        height:190px;
+
+    .cardImage {
+        width: 72vw;
+        height: 190px;
     }
+
     .cardText,
     .cardHead {
         width: 72vw;
     }
-    .cardBtn{
-        width:22vw;
+
+    .cardBtn {
+        width: 22vw;
     }
 }

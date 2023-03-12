@@ -2,48 +2,69 @@ import profile from "../Assets/profile.webp"
 import Card from "./card"
 import "./portfolio.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faUser, faEye, faMemo, faTrophy, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faUser, faEye, faBars, faTimes, faMemo, faTrophy, faBriefcase, faT } from "@fortawesome/free-solid-svg-icons";
 
 function Portfolio() {
     return <>
+        <div>
+            <input type="checkbox" id="check" />
+            <label for="check" >
+            <FontAwesomeIcon icon={faBars} id="btn"/>
+            <FontAwesomeIcon icon={faTimes} id="cancel" />
+            </label>
+        </div>
         <div className="sidebar">
-        <a href="#home">
-            <div className='sbDiv' >
-                <FontAwesomeIcon icon={faHouse} className="homeIcon" />
-                <p className="sbText">Home</p>
-            </div>
-            </a>
-            <a href="#about">
-            <div className='sbDiv'>
-                <FontAwesomeIcon icon={faUser} className="homeIcon" />
-                <p className="sbText">About Me</p>
-            </div>
-            </a>
-            <a href="#work">
-            <div className='sbDiv'>
-                <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
-                <p className="sbText">Work Experience</p>
-            </div>
-            </a>
-            <a href="#project">
-            <div className='sbDiv'>
-                <FontAwesomeIcon icon={faEye} className="homeIcon"  />
-                <p className="sbText">Projects</p>
-            </div>
-            </a>
-            <a href="#publication">
-            <div className='sbDiv'>
-            <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
-                {/* <FontAwesomeIcon icon={faMemo} className="homeIcon"  /> */}
-                <p className="sbText">Publications</p>
-            </div>
-            </a>
-            <a href="#achievement">
-            <div className='sbDiv'>
-                <FontAwesomeIcon icon={faTrophy} className="homeIcon" />
-                <p className="sbText">Achievements</p>
-            </div>
-            </a>
+            <ul className="list">
+                <li>
+                    <a href="#home">
+                        <div className='sbDiv' >
+                            <FontAwesomeIcon icon={faHouse} className="homeIcon" />
+                            <p className="sbText">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <div className='sbDiv'>
+                            <FontAwesomeIcon icon={faUser} className="homeIcon" />
+                            <p className="sbText">About Me</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#work">
+                        <div className='sbDiv'>
+                            <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
+                            <p className="sbText">Work Experience</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project">
+                        <div className='sbDiv'>
+                            <FontAwesomeIcon icon={faEye} className="homeIcon" />
+                            <p className="sbText">Projects</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#publication">
+                        <div className='sbDiv'>
+                            <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
+                            {/* <FontAwesomeIcon icon={faMemo} className="homeIcon"  /> */}
+                            <p className="sbText">Publications</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#achievement">
+                        <div className='sbDiv'>
+                            <FontAwesomeIcon icon={faTrophy} className="homeIcon" />
+                            <p className="sbText">Achievements</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
         <div className="portfolio">
             <div className="homeSection" id="home">
@@ -52,7 +73,7 @@ function Portfolio() {
                 <p className="homeText">Passionate Web Developer</p>
                 <ul className="homeLinks">
                     <li><a href="#about">About | </a></li>
-                  <li><a href="#work">Work Experience | </a></li>
+                    <li><a href="#work">Work Experience | </a></li>
                     <li><a href="#project">Projects | </a></li>
                     <li><a href="#publication">Publications | </a></li>
                     <li><a href="#achievement">Achievements | </a></li>
@@ -70,22 +91,22 @@ function Portfolio() {
             </div>
             <hr className="divider" />
             <div className="workSection" id="work">
-            <p className="aboutHead">Work Experience</p>
+                <p className="aboutHead">Work Experience</p>
                 <Card />
             </div>
             <hr className="divider" />
             <div className="workSection" id="project">
-            <p className="aboutHead">Projects</p>
+                <p className="aboutHead">Projects</p>
                 <Card />
             </div>
             <hr className="divider" />
             <div className="workSection" id="publication">
-            <p className="aboutHead">Publications</p>
+                <p className="aboutHead">Publications</p>
                 <Card />
             </div>
             <hr className="divider" />
             <div className="workSection" id="achievement">
-            <p className="aboutHead">Achievements</p>
+                <p className="aboutHead">Achievements</p>
                 <Card />
             </div>
         </div>
