@@ -8,26 +8,26 @@ import { faHouse, faUser, faEye, faBars, faTimes, faMemo, faTrophy, faBriefcase,
 function Portfolio() {
 
     const [active , setActive] = useState(true);
-
+    const [state , setState] = useState(false);
+ 
     useEffect(() => {
-        if(active){
+        
+        if(active && state){
             document.getElementById("sidebar").style.display = "none";
-        }else{
+        }else if(state){
             document.getElementById("sidebar").style.display = "block";
         }
     },[active])
-    
-
 
     return <>
         <div>
             <input type="checkbox" id="check" />
-            <label for="check" onClick={() => {setActive(!active)}}> 
+            <label for="check" onClick={() => {setActive(!active); setState(true);}}> 
             <FontAwesomeIcon icon={faBars} id={active ? "btn" : "no_btn"}  />
             <FontAwesomeIcon icon={faTimes} id={active ? "no_cancel" : "cancel"}/>
             </label>
         </div>
-        <div className= "sidebar" id = "sidebar">
+        <div className= "sidebar" id = {state ? "sidebar" : "new_sidebar"}>
             <ul className="list">
                 <li>
                     <a href="#home">
