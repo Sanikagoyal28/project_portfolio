@@ -1,19 +1,33 @@
 import profile from "../Assets/profile.webp"
+import { useEffect, useState } from "react"
 import Card from "./card"
 import "./portfolio.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faUser, faEye, faBars, faTimes, faMemo, faTrophy, faBriefcase, faT } from "@fortawesome/free-solid-svg-icons";
 
 function Portfolio() {
+
+    const [active , setActive] = useState(true);
+
+    useEffect(() => {
+        if(active){
+            document.getElementById("sidebar").style.display = "none";
+        }else{
+            document.getElementById("sidebar").style.display = "block";
+        }
+    },[active])
+    
+
+
     return <>
         <div>
             <input type="checkbox" id="check" />
-            <label for="check" >
-            <FontAwesomeIcon icon={faBars} id="btn"/>
-            <FontAwesomeIcon icon={faTimes} id="cancel" />
+            <label for="check" onClick={() => {setActive(!active)}}> 
+            <FontAwesomeIcon icon={faBars} id={active ? "btn" : "no_btn"}  />
+            <FontAwesomeIcon icon={faTimes} id={active ? "no_cancel" : "cancel"}/>
             </label>
         </div>
-        <div className="sidebar">
+        <div className= "sidebar" id = "sidebar">
             <ul className="list">
                 <li>
                     <a href="#home">

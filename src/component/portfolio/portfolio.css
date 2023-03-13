@@ -872,13 +872,26 @@ label #cancel {
 @media(max-width:520px) {
     .sidebar {
         /* left: -220px; */
-        width: 42vw;
-        left:0;
+        
+        z-index: 99;
     }
 
+    #no_cancel{
+        display: none;
+    }
+
+    #no_btn{
+        display: none;
+    }
+
+    
     label #btn,
     label #cancel {
         display: block;
+    }
+
+    label #cancel {
+        position: fixed;
     }
 
     #check:checked~.sidebar {
