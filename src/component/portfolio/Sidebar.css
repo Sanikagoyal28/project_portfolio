@@ -4,6 +4,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    position: fixed;
   }
   
   .menu-bars {
@@ -45,6 +46,7 @@
 
   .sidebar{
     left: 0;
+    transition: 0ms;
   }
 
   .center{

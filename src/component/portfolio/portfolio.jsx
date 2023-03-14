@@ -42,22 +42,22 @@ function Portfolio() {
             <hr className="divider" />
             <div className="workSection" id="work">
                 <p className="aboutHead">Work Experience</p>
-                <Card />
+                <Card cardHead={"Can domain adaptation make object recognition work for everyone ?"} cardBody = {" Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak,Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak"}/>
             </div>
             <hr className="divider" />
             <div className="workSection" id="project">
                 <p className="aboutHead">Projects</p>
-                <Card />
+                <Card cardHead={"Can domain adaptation make object recognition work for everyone ?"} cardBody = {" Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak,Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak"}/>
             </div>
             <hr className="divider" />
             <div className="workSection" id="publication">
                 <p className="aboutHead">Publications</p>
-                <Card />
+                <Card cardHead={"Can domain adaptation make object recognition work for everyone ?"} cardBody = {" Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak,Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak"}/>
             </div>
             <hr className="divider" />
             <div className="workSection" id="achievement">
                 <p className="aboutHead">Achievements</p>
-                <Card />
+                <Card cardHead={"Can domain adaptation make object recognition work for everyone ?"} cardBody = {" Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak,Viraj Prabhu, RampraSaath R. Selvaraju, Aditya Singh, Nikhil Nayak"}/>
             </div>
         </div>
     </>
