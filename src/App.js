@@ -3,7 +3,7 @@ import Portfolio from "./component/portfolio/portfolio";
 
 function App() {
  return <>
- <Portfolio />
+ <Portfolio/>
  </>
 }
 
