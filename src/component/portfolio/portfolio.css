@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Kaushan+Script&family=Manrope:wght@200;300;400&family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500&family=Sora:wght@200;300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;300;400;500&family=Kaushan+Script&family=Manrope:wght@400;300;400&family=Montserrat:wght@400;300;400;500;600&family=Roboto:wght@400;300;400;500&family=Sora:wght@400;300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,7 +11,7 @@
 .portfolio {
     margin-left: 12vw;
     padding-left: 2vw;
-    background-color: #121212;
+    background-color: #fff;
     padding-bottom: 40px;
 }
 
@@ -36,8 +37,8 @@
 }
 
 .homeHead {
-    color: #fff;
-    font-family: 'Inter';
+    color: black;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1.7rem;
@@ -48,8 +49,8 @@
 .homeImage {}
 
 .homeText {
-    color: rgb(255, 255, 255, 0.9);
-    font-family: 'Poppins';
+    color: rgb(0, 0, 0, 0.9);
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 1.2rem;
@@ -62,24 +63,24 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
+    color: black;
     margin-left: 4.2vw;
 }
 
 .homeLinks li {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 30px;
     letter-spacing: 0.08em;
     text-decoration: underline;
-    cursor: pointer;
+    cursor: poRoboto;
     margin-right: 0.5vw;
 }
 
 a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
@@ -100,22 +101,22 @@ a:hover {
 .homeBtn {
     width: 8.5vw;
     height: 38px;
-    border: 1px solid #fff;
+    border: 1px solid black;
     outline: none;
     background: none;
     border-radius: 4px;
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: blackFFF;
     margin-top: 12px;
-    cursor: pointer;
+    cursor: poRoboto;
 }
 
 .homeBtn:hover {
-    background: #fff;
+    background: black;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -124,10 +125,11 @@ a:hover {
 
 /* horizontal rule */
 .divider {
-    margin-left: -2vw;
-    width: 102%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
     border: none;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.6);
 }
 
 /* about */
@@ -137,10 +139,10 @@ a:hover {
 }
 
 .aboutHead {
-    color: #fff;
-    font-family: 'Inter';
+    color: black;
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2rem;
     line-height: 45px;
     letter-spacing: 0.08em;
@@ -149,13 +151,13 @@ a:hover {
 }
 
 .aboutText {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 0.95rem;
     line-height: 24px;
     letter-spacing: 0.08em;
-    color: rgb(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
     width: 70vw;
     margin-left: 6.5vw;
 }
@@ -170,7 +172,7 @@ a:hover {
 .card {
     display: flex;
     width: 70vw;
-    margin-left: 4vw;
+    margin-left: 6.5vw;
 }
 
 .cardImage {
@@ -189,25 +191,25 @@ a:hover {
 }
 
 .cardHead {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 24px;
     letter-spacing: 0.08em;
-    color: rgb(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0, 0.8);
     width: 48vw;
     margin-bottom: 16px;
 }
 
 .cardText {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 0.9rem;
     line-height: 24px;
     letter-spacing: 0.08em;
-    color: rgb(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0, 0.8);
     width: 48vw;
     margin-bottom: 16px;
 }
@@ -215,21 +217,21 @@ a:hover {
 .cardBtn {
     width: 8vw;
     height: 38px;
-    border: 1px solid #fff;
+    border: 1px solid black;
     outline: none;
     background: none;
     border-radius: 4px;
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
-    cursor: pointer;
+    color: blackFFF;
+    cursor: poRoboto;
 }
 
 .cardBtn:hover {
-    background: #fff;
+    background: black;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -245,7 +247,7 @@ a:hover {
 label #btn,
 label #cancel {
     position: absolute;
-    cursor: pointer;
+    cursor: poRoboto;
     display: none;
 }
 
@@ -266,7 +268,7 @@ label #cancel {
     left: -30vw;
     top: 12px;
     font-size: 2rem;
-    color: #fff;
+    color: black;
     opacity: 0.9;
     padding: 4px 9px;
     transition: all 0.5s ease;
@@ -281,7 +283,7 @@ label #cancel {
 }
 
 .sidebar,#new_sidebar {
-    background-color: #222;
+    background-color: #333;
     background-blend-mode: lighten;
     filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
     width: 12vw;
@@ -301,28 +303,36 @@ label #cancel {
 }
 
 .sbDiv:hover {
-    background-color: #000;
+    background-color: #222;
     transition: 2ms;
+}
+
+.sbDiv > a:hover {
+    text-decoration: none;
 }
 
 .homeIcon {
     margin-left: 0.5vw;
     font-size: 1.5rem;
     margin-bottom: 8px;
-    color: #fff;
+    color: white;
 
 }
 
 .sbText {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 1.1rem;
     line-height: 23px;
-    color: #fff;
+    color: white;
     margin-top: 2px;
     text-transform: capitalize;
-    cursor: pointer;
+    cursor: poRoboto;
+}
+
+.list{
+    list-style: none;
 }
 
 .sidebar,#new_sidebar >a {
@@ -353,7 +363,7 @@ label > #no_cancel {
     } 
 }
 
-@media(max-width:1200px) {
+@media(max-width:1400px) {
     .homeHead {
         font-size: 1.6rem;
     }
@@ -583,7 +593,7 @@ label > #no_cancel {
 
     .cardImage {
         width: 350px;
-        height: 200px;
+        height: 400px;
     }
 }
 
@@ -603,7 +613,7 @@ label > #no_cancel {
 
     .cardImage {
         width: 270px;
-        height: 200px;
+        height: 400px;
     }
 }
 
@@ -759,7 +769,7 @@ label > #no_cancel {
     }
 
     .cardImage {
-        width: 200px;
+        width: 400px;
         height: 180px;
     }
 }
@@ -1077,7 +1087,7 @@ label > #no_cancel {
     }
 
     .cardImage {
-        height: 200px;
+        height: 400px;
     }
     label #btn {
         right:20px;
@@ -1141,7 +1151,7 @@ label > #no_cancel {
     }
 
     .cardImage {
-        height: 200px;
+        height: 400px;
     }
 
     .homeImage {
