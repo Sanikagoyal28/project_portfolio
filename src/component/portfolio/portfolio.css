@@ -46,7 +46,7 @@
     letter-spacing: 0.08em;
 }
 
-.homeImage {}
+
 
 .homeText {
     color: rgb(0, 0, 0, 0.9);
@@ -113,6 +113,8 @@ a:hover {
     color: blackFFF;
     margin-top: 12px;
     cursor: poRoboto;
+    cursor: pointer;
+    
 }
 
 .homeBtn:hover {
@@ -120,7 +122,8 @@ a:hover {
     border: none;
     outline: none;
     border-radius: 4px;
-    color: #252525;
+    color: white;
+    border-color: wheat;
 }
 
 /* horizontal rule */
@@ -228,6 +231,7 @@ a:hover {
     line-height: 24px;
     color: blackFFF;
     cursor: poRoboto;
+    cursor: pointer;
 }
 
 .cardBtn:hover {
@@ -235,7 +239,8 @@ a:hover {
     border: none;
     outline: none;
     border-radius: 4px;
-    color: #252525;
+    color: white;
+    border-color: #fff;
 }
 
 /* sidebar */
@@ -550,6 +555,7 @@ label > #no_cancel {
 
     .homeBtn {
         width: 12vw;
+        
     }
 
     .cardText,

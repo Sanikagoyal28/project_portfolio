@@ -4,6 +4,7 @@ import Card from "./card"
 import "./portfolio.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faUser, faEye, faBars, faTimes, faMemo, faTrophy, faBriefcase, faT } from "@fortawesome/free-solid-svg-icons";
+import Sidebar from "./Sidebar.js"
 
 function Portfolio() {
 
@@ -17,81 +18,16 @@ function Portfolio() {
         }else if(state){
             document.getElementById("sidebar").style.display = "block";
         }
-    },[active])
+    },[active , state ])
 
     return <>
-        <div>
-            <input type="checkbox" id="check" />
-            <label for="check" onClick={() => {setActive(!active); setState(true);}}> 
-            <FontAwesomeIcon icon={faBars} id={active ? "btn" : "no_btn"}  />
-            <FontAwesomeIcon icon={faTimes} id={active ? "no_cancel" : "cancel"}/>
-            </label>
-        </div>
-        <div className= "sidebar" id = {state ? "sidebar" : "new_sidebar"}>
-            <ul className="list">
-                <li>
-                    <a href="#home">
-                        <div className='sbDiv' >
-                            <FontAwesomeIcon icon={faHouse} className="homeIcon" />
-                            <p className="sbText">Home</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        <div className='sbDiv'>
-                            <FontAwesomeIcon icon={faUser} className="homeIcon" />
-                            <p className="sbText">About Me</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#work">
-                        <div className='sbDiv'>
-                            <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
-                            <p className="sbText">Work Experience</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#project">
-                        <div className='sbDiv'>
-                            <FontAwesomeIcon icon={faEye} className="homeIcon" />
-                            <p className="sbText">Projects</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#publication">
-                        <div className='sbDiv'>
-                            <FontAwesomeIcon icon={faBriefcase} className="homeIcon" />
-                            {/* <FontAwesomeIcon icon={faMemo} className="homeIcon"  /> */}
-                            <p className="sbText">Publications</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#achievement">
-                        <div className='sbDiv'>
-                            <FontAwesomeIcon icon={faTrophy} className="homeIcon" />
-                            <p className="sbText">Achievements</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <Sidebar />
         <div className="portfolio">
             <div className="homeSection" id="home">
                 <p className="homeHead">Hello, I'm Vikas Upadhyay</p>
                 <img src={profile} className="homeImage" />
                 <p className="homeText">Passionate Web Developer</p>
-                <ul className="homeLinks">
-                    <li><a href="#about">About | </a></li>
-                    <li><a href="#work">Work Experience | </a></li>
-                    <li><a href="#project">Projects | </a></li>
-                    <li><a href="#publication">Publications | </a></li>
-                    <li><a href="#achievement">Achievements | </a></li>
-                </ul>
+               
                 <button className="homeBtn">Resume</button>
             </div>
             <hr className="divider" />
